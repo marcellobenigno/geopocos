@@ -1,4 +1,4 @@
-# GEOPOSTOS - 🌵 GeoDjango Unchained 🌵
+# GEOPOÇOS - 🌵 GeoDjango Unchained 🌵
 
 Projeto apresentado na Live de Python do Canal **Geocast Brasil**.
 
