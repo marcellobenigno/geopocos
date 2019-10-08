@@ -1,0 +1,7 @@
+var pocosCoord = [
+
+{% for poco in object_list %}
+        [{{ poco.geom.y|safe }}, {{ poco.geom.x|safe }}, {{ poco.q_m3h|safe }}],
+{% endfor %}
+
+];

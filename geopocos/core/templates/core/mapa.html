@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link href="{% static 'libs/leaflet/leaflet.css' %}" rel="stylesheet">
+{% endblock extra_css %}
+
+
+{% block content %}
+
+    <div id="map"></div>
+    <input type="hidden" id="pocos_geojson" value="{% url 'poco:poco_geojson' %}">
+    <input type="hidden" id="qmax" value="{{ q_max.q_m3h__max|safe }}">
+{% endblock content %}
+
+
+{% block extra_js %}
+    <script src="{% static 'libs/leaflet/leaflet.js' %}"></script>
+    <script src="{% static 'libs/leaflet-heat/leaflet-heat.js' %}"></script>
+    <script src="{% url 'poco:pocos_js' %}"></script>
+    <script>
+        {% include 'includes/js/map.js' %}
+    </script>
+{% endblock extra_js %}

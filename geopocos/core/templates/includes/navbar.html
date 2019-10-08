@@ -1,0 +1,19 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="{% url 'core:index' %}">GeoPoços</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item {% if request.resolver_match.url_name == "index" %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'core:index' %}">Home</a>
+                </li>
+                <li class="nav-item {% if request.resolver_match.url_name == "mapa" %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'core:mapa' %}">Mapa</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

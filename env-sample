@@ -1,0 +1,7 @@
+SECRET_KEY=you-secret-key-here
+
+DEBUG=True
+
+ALLOWED_HOSTS=127.0.0.1, .localhost,
+
+DATABASE_URL=postgres://postgres:postgres@localhost/geopocos

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <div class="jumbotron mt-lg-5">
+        <div class="container">
+            <h1 class="display-3">GeoPoços</h1>
+            <p>SIG-WEB com o objetivo de exibir os poços perfurados do Estado da Paraíba.</p>
+            <p><a class="btn btn-primary btn-lg" href="{% url 'core:mapa' %}" role="button">
+                Acessar o Mapa »</a>
+            </p>
+        </div>
+    </div>
+
+{% endblock content %}
