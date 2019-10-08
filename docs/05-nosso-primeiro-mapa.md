@@ -1,4 +1,4 @@
-# 4. NOSSO PRIMEIRO MAPA 🌎
+# 5. NOSSO PRIMEIRO MAPA 🌎
 
 Vamos adicionar a biblioteca [Leaflet](https://leafletjs.com/) no pasta libs, dos nossos arquivos estáticos, em `geopocos/geopocos/core/static`: 
 ```

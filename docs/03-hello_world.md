@@ -1,4 +1,4 @@
-# 2. HELLO WORLD
+# 3. HELLO WORLD
 
 Vamos criar a página inicial do nosso projeto, para isso iremos trabalhar na  app `core`
 
@@ -28,7 +28,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### 2.1 Criando a view `index`
+### 3.1 Criando a view `index`
 
 Edite o arquivo `geopocos/geopocos/core/view.py`, adicionando o seguinte conteúdo:
 
@@ -57,7 +57,7 @@ Crie o arquivo `index.html` dentro de `geopocos/geopocos/core/templates/core/`, 
 </html>
 ```
 
-### 2.2 Criando a URL da nossa página inicial:
+### 3.2 Criando a URL da nossa página inicial:
 
 Edite o arquivo `geopocos/geopocos/urls.py`
 
@@ -77,7 +77,7 @@ Rode o `runserver` no terminal, para ver o *Olá GeoDjango* 😄
 
 ![](.pastes/2019-10-06-20-44-18.png)
 
-### 2.3 Refatorando o arquivo de urls:
+### 3.3 Refatorando o arquivo de urls:
 
 Crie na pasta `geopocos/geopocos/core/` um arquivo com o nome `urls.py`, e dentro dele, coloque o seguinte conteúdo:
 

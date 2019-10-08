@@ -1,4 +1,4 @@
-# 6. ADICIONANDO OS POÇOS NO MAPA
+# 8. ADICIONANDO OS POÇOS NO MAPA
 
 Vamos instalar dois pacotes:
 

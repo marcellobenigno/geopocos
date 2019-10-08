@@ -1,4 +1,4 @@
-# 7. CRIANDO O MAPA DE INTENSIDADE DE PONTOS (HEATMAP)
+# 8. CRIANDO O MAPA DE INTENSIDADE DE PONTOS (HEATMAP)
 
 Vamos melhorar o nosso mapa através do plugin do Leaflet chamado [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat), para isso, baixe o conteúdo da pasta **dist**, que no caso é o arquivo `leaflet-heat.js`na seguinte pasta em `geopocos/geopocos/core/static/libs`:
 

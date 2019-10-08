@@ -1,4 +1,4 @@
-# 3. USANDO O BOOTSTRAP COM HERANÇA DE TEMPLATES
+# 4. USANDO O BOOTSTRAP COM HERANÇA DE TEMPLATES
 
 Vamos melhorar a nossa página inicial adicionando o [Bootstrap](https://getbootstrap.com.br/). Para isto, crie dentro da pasta `geopocos/geopocos/core` a pasta `static`, crie a seguinte estrutura dentro dela:
 

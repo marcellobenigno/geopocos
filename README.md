@@ -13,7 +13,7 @@ Projeto apresentado na Live de Python do Canal **Geocast Brasil**.
 5. [NOSSO PRIMEIRO MAPA](docs/05-nosso-primeiro-mapa.md)
 6. [MODELS](docs/06-models.md)
 7. [ADICIONANDO OS POÇOS NO MAPA](docs/07-adicionando-pocos-mapa.md)
-8. [CRIANDO O MAPA DE INTENSIDADE DE PONTOS (HEATMAP)](docs/07-adicionando-pocos-mapa.md)
+8. [CRIANDO O MAPA DE INTENSIDADE DE PONTOS (HEATMAP)](docs/08-adicionado-heatmap.md)
 
 
 ## REQUISITOS
