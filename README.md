@@ -6,7 +6,7 @@ Projeto apresentado na Live de Python do Canal **Geocast Brasil**.
 
 ## ÍNDICE DA APRESENTAÇÃO:
 
-1. [SOBRE O INSTRUTOR](docs/01-apresentacao.md)
+1. [APRESENTAÇÃO](docs/01-apresentacao.md)
 2. [INSTALAÇÃO](docs/02-instalacao.md)
 3. [HELLO WORLD](docs/03-hello_world.md)
 4. [USANDO O BOOTSTRAP COM HERANÇA DE TEMPLATES](docs/04-heranca-de-templates.md)
