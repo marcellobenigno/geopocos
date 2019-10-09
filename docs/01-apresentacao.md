@@ -18,9 +18,24 @@ Onde me encontrar:
 - [@mbfilho](https://t.me/mbfilho)  telegram 💬 
 
 
-# Django
+
+## TECNOLOGIAS UTILIZADAS NESTE PROJETO:
+
+### Django:
 
  - **Django** é um framework para desenvolvimento rápido para web, escrito em **Python**, que utiliza o padrão Model-View-Template (MVT)
  - **GeoDjango** é o módulo nativo do Django para criar aplicações geográficas
 
 ![](.pastes/2019-10-06-08-13-52.png)
+
+### PostGIS:
+
+- É  uma **extensão** espacial do sistema de banco de dados objeto-relacional PostgreSQL
+- Permite o armazenamento e manipulação de dados espaciais em um banco de dados objeto relacional
+
+### Leaflet:
+
+- É uma biblioteca JavaScript Open Source  para criação de Web mapas interativos.
+- Possui uma série de plugins
+- Extremamente leve
+- Possui uma boa documentação
