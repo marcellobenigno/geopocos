@@ -57,7 +57,7 @@ var pocosCoord = [
 {% endfor %}
 ];
 ```
-Criamos então a url de acesso a este aquivo javascript:
+Criamos então a url de acesso a este arquivo javascript:
 
 ```python
 from django.urls import path
@@ -118,9 +118,7 @@ Com esta alteração, também é necessário modificar o arquivo `mapa.html`:
     <script src="{% static 'libs/leaflet/leaflet.js' %}"></script>
     <script src="{% static 'libs/leaflet-heat/leaflet-heat.js' %}"></script>
     <script src="{% url 'poco:pocos_js' %}"></script>
-    <script>
-        {% include 'includes/js/map.js' %}
-    </script>
+    <script src="{% static 'js/map.js' %}"></script>
 {% endblock extra_js %}
 ```
 

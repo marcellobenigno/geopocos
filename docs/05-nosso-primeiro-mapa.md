@@ -74,13 +74,11 @@ e o conteúdo do arquivo `geopocos/geopocos/core/mapa.html` será esse:
 
 {% block extra_js %}
     <script src="{% static 'libs/leaflet/leaflet.js' %}"></script>
-    <script>
-        {% include 'includes/js/map.js' %}
-    </script>
+    <script src="{% static 'js/map.js' %}"></script>
 {% endblock extra_js %}
 ```
 
-Devemos então criar o arquivo `geopocos/geopocos/core/includes/map.js`:
+Devemos então criar o arquivo `geopocos/geopocos/core/static/js/map.js`:
 
 ```javascript
 var gstreets = L.tileLayer('http://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}', {

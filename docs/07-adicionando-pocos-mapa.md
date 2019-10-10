@@ -107,7 +107,7 @@ urlpatterns = [
 ]
 ```
 
-Devemos adicionar no javascript do nosso mapa a configuração necessária para o funcionamento da nossa camada:
+Devemos adicionar no **javascript** do nosso mapa a configuração necessária para o funcionamento da nossa camada:
 
 ```javascript
 function onEachFeature(feature, layer) {
