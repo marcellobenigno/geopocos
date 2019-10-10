@@ -55,7 +55,11 @@ alias mm='m migrate'
 
 ### Configuração do settings.py:
 
-Antes de configurar o arquivo `settings.py`, vamos instalar inicialmente três pacotes necessários para o nosso projeto:
+Antes de configurar o arquivo `settings.py`, vamos instalar inicialmente três pacotes necessários para o nosso projeto, são eles:
+
+* [python-decouple](https://github.com/henriquebastos/python-decouple):  tem como objetivo separar as configurações da instância do projeto
+* [dj-database-url](https://github.com/jacobian/dj-database-url): permite que você crie uma url com a configuração de conexão do seu Banco de Dados
+* [psycopg2](http://initd.org/psycopg/): adapter python do  PostgreSQL
 
 ```bash
 pip install python-decouple psycopg2 dj-database-url
@@ -98,6 +102,10 @@ DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 LANGUAGE_CODE = 'pt-br'
 TIME_ZONE = 'America/Recife'
+
+# Adição da pasta dos arquivos estáticos
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 ```
 
 💡 Não se esqueça de criar um arquivo com todas as dependências do projeto e a cada vez que um novo pacote for adicionado.
@@ -110,6 +118,7 @@ pip freeze > requirements.txt
 
 ```bash
 # Para criar as tabelas no nosso banco de dados:
+python manage.py check
 python manage.py migrate
 
 # Para ver o projeto rodando:

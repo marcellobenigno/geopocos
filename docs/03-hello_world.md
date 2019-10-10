@@ -35,8 +35,6 @@ Edite o arquivo `geopocos/geopocos/core/view.py`, adicionando o seguinte conteú
 ```python
 from django.shortcuts import render
 
-from geopocos.poco.models import Poco
-
 
 def index(request):
     return render(request, 'core/index.html') 

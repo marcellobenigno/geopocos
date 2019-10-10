@@ -38,6 +38,7 @@ Agora, crie o arquivo `base.html`, na pasta `geopocos/geopocos/core/templates`, 
 </div>
 
 <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'libs/bootstrap-4.1.3/js/bootstrap.min.js' %}"></script>
 {% block extra_js %}
 {% endblock extra_js %}
