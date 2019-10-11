@@ -1,9 +1,9 @@
 # 8. ADICIONANDO OS POÇOS NO MAPA
 
-Vamos instalar dois pacotes:
+Vamos instalar mais um pacote:
 
 ```bash
-pip install django-geojson django-leaflet
+pip install django-geojson
 ```
 
 E colocá-las no nosso `settings.py`:
@@ -19,7 +19,6 @@ INSTALLED_APPS = [
     # GeoDjango
     'django.contrib.gis',
     # Other apps
-    'leaflet',
     'djgeojson',
     # My apps
     'geopocos.core',
@@ -28,7 +27,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Criaremos uma `@property` no nosso modelo, para exbir os dados em uma janela popup:
+Criaremos uma `@property` no nosso modelo, para exibir os dados em uma janela popup:
 
 ```python
 from django.contrib.gis.db import models
@@ -90,7 +89,6 @@ app_name = 'poco'
 
 urlpatterns = [
     path('geojson/', v.PocoGeoJson.as_view(), name='poco_geojson'),
-    path('pocos.js/', v.pocos_js, name='pocos_js'),
 ]
 ```
 
@@ -106,6 +104,29 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 ```
+No template html do template do mapa, colocaremos um campo do tipo **hidden** que, através do seletor **jquery** será resgatado no nosso arquivo `map.js`:
+
+```html
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link href="{% static 'libs/leaflet/leaflet.css' %}" rel="stylesheet">
+{% endblock extra_css %}
+
+
+{% block content %}
+    <div id="map"></div>
+    <input type="hidden" id="pocos_geojson" value="{% url 'poco:poco_geojson' %}">
+{% endblock content %}
+
+
+{% block extra_js %}
+    <script src="{% static 'libs/leaflet/leaflet.js' %}"></script>
+    <script src="{% static 'libs/leaflet-heat/leaflet-heat.js' %}"></script>
+    <script src="{% static 'js/map.js' %}"></script>
+{% endblock extra_js %}
+``` 
 
 Devemos adicionar no **javascript** do nosso mapa a configuração necessária para o funcionamento da nossa camada:
 
@@ -170,7 +191,6 @@ Por último, uma pequena modificação no arquivo `main.css` para melhorar a apa
 body {
     padding-top: 3.5rem;
 }
-
 
 #map {
     margin-top: 0.5rem;

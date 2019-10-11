@@ -37,6 +37,7 @@ Em seguida, altere o arquivo `base.html`:
     {% endblock content %}
 </div>
 <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'libs/bootstrap-4.1.3/js/bootstrap.min.js' %}"></script>
 {% block extra_js %}
 {% endblock extra_js %}
