@@ -123,3 +123,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LEAFLET_CONFIG = {
+    'SPATIAL_EXTENT': (
+        -39.2514038, -8.81179652676,
+        -34.00817871, -5.656985355261,
+
+    ),
+    'TILES': [('GStreets', 'http://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}',
+               {'attribution': '&copy; Google'}),
+              ('GSatellite',
+               'http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}',
+               {'attribution': '&copy; Google'})]
+}
