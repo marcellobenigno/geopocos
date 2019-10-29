@@ -4,21 +4,38 @@ Projeto apresentado na Live de Python do Canal **Geocast Brasil**
 
 ![GeoDjango Unchained](docs/.pastes/2019-10-06-07-49-37.png)
 
-A live foi apresentada dia 10/10/2019 e abordou parcialmente o conteúdo (até o ponto 6) e está disponível em:  
+A live foi apresentada em duas sessões:  
+### Live 1:  
+Apresentada no dia 10/10/2019 e abordou parcialmente o conteúdo (até o ponto 6), está disponível em:  
  [![](https://img.youtube.com/vi/ofTUgfZbEkU/0.jpg)](https://www.youtube.com/watch?v=ofTUgfZbEkU)  
 
-:warning: **A live de continuação será dia 24/10/2019 às 22 horas** :warning:  
+### ÍNDICE DA APRESENTAÇÃO:
 
-## ÍNDICE DA APRESENTAÇÃO:
-
-1. [APRESENTAÇÃO](docs/01-apresentacao.md) 7:00  
-2. [INSTALAÇÃO](docs/02-instalacao.md) 9:44  
-3. [HELLO WORLD](docs/03-hello_world.md) 45:57  
-4. [USANDO O BOOTSTRAP COM HERANÇA DE TEMPLATES](docs/04-heranca-de-templates.md) 1:04:14  
+1. [APRESENTAÇÃO](docs/01-apresentacao.md) [Live 1: 7:00](https://youtu.be/ofTUgfZbEkU?t=420)  
+2. [INSTALAÇÃO](docs/02-instalacao.md) [Live 1: 9:44](https://youtu.be/ofTUgfZbEkU?t=583)  
+3. [HELLO WORLD](docs/03-hello_world.md) [Live 1: 45:57](https://youtu.be/ofTUgfZbEkU?t=2757)  
+4. [USANDO O BOOTSTRAP COM HERANÇA DE TEMPLATES](docs/04-heranca-de-templates.md) [Live 1: 1:04:14](https://youtu.be/ofTUgfZbEkU?t=3840)  
 5. [NOSSO PRIMEIRO MAPA](docs/05-nosso-primeiro-mapa.md)
-6. [MODELS](docs/06-models.md) 1:18:47  
-7. [ADICIONANDO OS POÇOS NO MAPA](docs/07-adicionando-pocos-mapa.md) 1:38:07 
-8. [CRIANDO O MAPA DE INTENSIDADE DE PONTOS (HEATMAP)](docs/08-adicionado-heatmap.md)
+6. [MODELS](docs/06-models.md) [Live 1: 1:18:47](https://youtu.be/ofTUgfZbEkU?t=4727)  
+7. [ADICIONANDO OS POÇOS NO MAPA](docs/07-adicionando-pocos-mapa.md) [Live 1: 1:38:07](https://youtu.be/ofTUgfZbEkU?t=5885) 
+
+### Live 2:
+Apresentada no dia 24/10/2019, está disponível em:  
+[![](https://img.youtube.com/vi/04O45CQ9gcc/0.jpg)](https://www.youtube.com/watch?v=04O45CQ9gcc)  
+:warning: Nessa ultima *live* tivemos alguns problemas computacionais, o gerou atraso na apresentação dos conteúdos propostos. A partir do minúto 30:00 começamos, enfim, a trabalhar com o que havíamos proposto :);    
+
+### ÍNDICE DA APRESENTAÇÃO:
+
+1. **REVISÃO LIVE ANTERIOR** [Live 2: 30:00](https://youtu.be/04O45CQ9gcc?t=1801)  
+2. [MODELS - ogrinspect](docs/06-models.md) [Live 2: 37:08](https://youtu.be/04O45CQ9gcc?t=2220)  
+3. CARREGANDO OS DADOS À BASE DE DADOS [Live 2: 43:00](https://youtu.be/04O45CQ9gcc?t=2580)  
+4. ADMIN [Live 2: 50:27](https://youtu.be/04O45CQ9gcc?t=3444)  
+5. ADJANGO-LEAFLET [Live 2: 1:00:38](https://youtu.be/04O45CQ9gcc?t=3630)  
+6. VIEW [Live 2: 1:12:00](https://youtu.be/04O45CQ9gcc?t=4322)  
+7. TEMPLATE [Live 2: 1:39:00](https://youtu.be/04O45CQ9gcc?t=5940)  
+8. MAPA [Live 2: 1:42:00](https://youtu.be/04O45CQ9gcc?t=6121)  
+9. [CRIANDO O MAPA DE INTENSIDADE DE PONTOS (HEATMAP)](docs/08-adicionado-heatmap.md)  [Live 2: 1:56:00](https://youtu.be/04O45CQ9gcc?t=6953)  
+10. DUVIDAS E COMENTÁRIOS [Live 2 2:30:00 ](https://youtu.be/04O45CQ9gcc?t=9000)  
 
 
 ## REQUISITOS
