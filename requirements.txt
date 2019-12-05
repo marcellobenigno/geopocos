@@ -7,7 +7,7 @@ chardet==3.0.4
 curtsies==0.3.0
 decorator==4.4.0
 dj-database-url==0.5.0
-Django==2.2.6
+django>=2.2.8
 django-extensions==2.2.3
 django-geojson==2.12.0
 django-leaflet==0.24.0
