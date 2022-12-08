@@ -2,7 +2,7 @@ appnope==0.1.0
 backcall==0.1.0
 blessings==1.7
 bpython==0.18
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 curtsies==0.3.0
 decorator==4.4.0
