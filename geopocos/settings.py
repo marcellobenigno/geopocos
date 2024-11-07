@@ -45,9 +45,9 @@ INSTALLED_APPS = [
     'leaflet',
     'djgeojson',
     # My apps
-    'geopocos.core',
-    'geopocos.municipio',
-    'geopocos.poco',
+    'geopocos.core.apps.CoreConfig',
+    'geopocos.municipio.apps.MunicipioConfig',
+    'geopocos.poco.apps.PocoConfig',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +87,8 @@ DATABASES = {
     'default': config('DATABASE_URL', cast=db_url)
 }
 DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
