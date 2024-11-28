@@ -14,6 +14,10 @@ class Poco(models.Model):
     def __str__(self):
         return self.proprietario
 
+    class Meta:
+        verbose_name = 'Poço'
+        verbose_name_plural = 'Poços'
+
     @property
     def popup_content(self):
         popup = "<span>Proprietário: </span>{}".format(

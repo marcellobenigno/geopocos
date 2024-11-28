@@ -5,7 +5,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -15,10 +14,18 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Municipio',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nome', models.CharField(max_length=40, verbose_name='nome')),
-                ('cod_ibge_m', models.CharField(max_length=20, verbose_name='código IBGE')),
-                ('geom', django.contrib.gis.db.models.fields.MultiPolygonField(srid=4326, verbose_name='geom')),
+                ('id', models.AutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
+                 ),
+                ('nome', models.CharField(
+                    max_length=40, verbose_name='nome')
+                 ),
+                ('cod_ibge_m', models.CharField(
+                    max_length=20, verbose_name='código IBGE')
+                 ),
+                ('geom', django.contrib.gis.db.models.fields.MultiPolygonField(
+                    srid=4326, verbose_name='geom')
+                 ),
             ],
         ),
     ]

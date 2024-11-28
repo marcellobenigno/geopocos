@@ -4,12 +4,12 @@ from django.contrib.gis.utils import LayerMapping
 from .models import Poco
 
 poco_mapping = {
-    'proprietario': 'PROPRIETAT',
-    'orgao': 'ORGAO',
-    'data_perfuracao': 'DATAPERFUR',
-    'profundidade': 'PROFUNDIDA',
-    'q_m3h': 'Q',
-    'equipamento': 'EQUIPAMENT',
+    'proprietario': 'proprietar',
+    'orgao': 'orgao',
+    'data_perfuracao': 'data_perfu',
+    'profundidade': 'profundida',
+    'q_m3h': 'q_m3h',
+    'equipamento': 'equipament',
     'geom': 'POINT',
 }
 
